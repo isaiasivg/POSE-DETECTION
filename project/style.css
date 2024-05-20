@@ -1,0 +1,80 @@
+/* CSS styles for the HTML and body elements */
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Maintain full viewport height */
+  overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+/* CSS styles for the container div */
+.container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+  height: 100%; /* Ensure container fills the entire viewport height */
+  width: 100%;  /* Ensure container fills the entire viewport width */
+}
+
+/* CSS styles for the input container */
+.input-container {
+  padding: 10px; /* Add padding around the input area */
+  background-color: #f0f0f0; /* Set background color for the input area */
+}
+
+/* CSS styles for the content container */
+.content-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange items in a row */
+  height: 100%; /* Ensure content container fills the entire viewport height */
+  width: 100%;  /* Ensure content container fills the entire viewport width */
+}
+
+/* CSS styles for the video element */
+.video {
+  flex: 1; /* Allow video to occupy remaining space */
+  object-fit: contain; /* Maintain aspect ratio of video */
+  width: 90%; /* Ensure video fills 90% of available width */
+  height: 100%; /* Ensure video fills available height */
+}
+
+/* CSS styles for the canvas element */
+.canvas {
+  flex: 1; /* Allow canvas to occupy remaining space */
+  object-fit: contain; /* Maintain aspect ratio of canvas */
+  width: 90%; /* Ensure canvas fills 90% of available width */
+  height: 100%; /* Ensure canvas fills available height */
+}
+
+/* CSS styles for the exercise container */
+.exercise-container {
+  flex: 0 0 10%; /* Defines a fixed size of 10% */
+  background-color: #ffffff; /* Adds a background color */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Arranges child elements in a column */
+  justify-content: center; /* Centers child elements vertically */
+  align-items: center; /* Centers child elements horizontally */
+  overflow-y: auto; /* Adds vertical scrolling if needed */
+}
+
+/* CSS styles for the exercise squares */
+.exercise {
+  margin-bottom: 20px; /* Adds more space between exercises */
+  width: 75%; /* Sets the width of the squares */
+  padding: 15px; /* Increases the internal padding */
+  border: 2px solid #444; /* Adds a darker border */
+  border-radius: 10px; /* Rounds the borders */
+  text-align: center; /* Centers the text */
+  background-color: #f8f8f8; /* Light background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Adds transitions */
+}
+
+/* Class with the effect */
+.elevate {
+  transform: translateY(-5px); /* Slightly elevates the square */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increases the shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.hidden {
+  display: none;
+}
